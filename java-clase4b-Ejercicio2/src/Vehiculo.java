@@ -55,5 +55,8 @@ public abstract class Vehiculo {
         this.ruedas = ruedas;
     }
 
-
+    @Override
+    public boolean equals(Object obj) {
+        return this.patente.equals(((Vehiculo)obj).getPatente());
+    }
 }
